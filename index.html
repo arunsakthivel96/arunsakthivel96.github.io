@@ -1,83 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Happy New Year </title>
+	<link rel="shortcut ico" href="favicon1.ico" type="image/x-icon"/>
+	<link rel="icon" href="favicon1.ico" type="image/x-icon"/>
+	<title>Indian Developer Forums</title>
+    <link rel="stylesheet" href="app/app.css">
+    <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
+    <script
+  src="http://code.jquery.com/jquery-2.2.4.min.js"
+ ></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
 
-  <link rel="shortcut ico" href="favicon.ico" type="image/x-icon"/>
-  <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+	<script>
+		angular.module('myapp',[]).controller('myctrl',function($scope){
+			
+		});
+		angular.module("myApp", ["ngRoute"]).config(function($routeProvider) {
+			    $routeProvider
+			    .when("/", {
+			        templateUrl : "./home.htm"
+			    })
+			    .when("/home", {
+			        templateUrl : "./home.htm"
+			    })
+			    .when("/Tutorial", {
+			        templateUrl : "./tut.htm"
+			    })
+			    .when("/Forums", {
+			        templateUrl : "./forum.htm"
+    });
+			});
+	</script>
+	<script type="text/javascript">
+		$(window).scroll(function(){
+			if($(this).scrollTop()>100){
+				$('.menu').addClass("sticky");
 
-  <link rel="stylesheet" href="assets/css/flipclock-0.7.7.css">
-  <link rel="stylesheet" href="app/app.css">
-
-  <script src="assets/js/jquery-2.1.4.min.js"></script>
-  <script src="assets/js/flipclock-0.7.7.min.js"></script>
-  <script src="app/app.js"></script>
+			}
+			else{
+				$('.menu').removeClass("sticky");
+			}
+		})
+	</script>
 </head>
-<body>
-  <div id="wrapper">
-    <div id="header"></div>
-    <div id="content">
-      <div class="new-year-clock" style="margin-top: 260px;"></div>
-
-    </div>
-    <h1 id="messageLabel" style="color: #fff; text-align: center;margin-bottom: : -20px"></h1>
-
-    
-        <script>
-var message = "Happy New Year!!";
-var msgCount = 0;
-var blinkCount = 0;
-var blinkFlg = 0;
-var timer1, timer2;
-var messageLabel = document.getElementById("messageLabel");
- 
-function textFunc() {
-     
-    messageLabel.innerHTML = message.substring(0, msgCount);
-     
-    if (msgCount == message.length) {
-        // Stop timer
-        clearInterval(timer1);
-         
-        // Start blinking animation!
-        timer2 = setInterval("blinkFunc()", 200);
-         
-    } else {
-        msgCount++;
-    }
-     
-}
- 
-function blinkFunc() {
-     
-    // blink 5 times.
-    if (blinkCount < 6) {
-         
-        if (blinkFlg == 0) {
-            messageLabel.innerHTML = message;
-            blinkFlg = 1;
-            blinkCount++;
-             
-        } else {
-            messageLabel.innerHTML = "";
-            blinkFlg = 0;
-        }
-         
-    } else {
-        // Stop timer
-        clearInterval(timer2);
-    }
-     
-     
-}
- 
-timer1 = setInterval("textFunc()", 3000); // every 150 milliseconds
- 
-</script>
-    <div id="footer">
-      
-    </div>
-
+<body ng-app="myapp" ng-controller="myctrl">
+<div class="div-nav">
+	<div class="text">
+		<h1> Indian Developers Forum </h1>
+	</div>
+	<ul class="menu">
+		<li><a href="#/!">Home</a></li>
+		<li><a href="#!Tutorial">Tutorial</a></li>
+		<li><a href="#!Forums">Forums</a></li>
+ 		<li><a href="https://www.youtube.com/c/IndianDeveloperForums" target="blank">Channel</a></li>
+ 		<li><a href="https://www.facebook.com/HackerHck4/" target="blank">Facebook</a></li>
+ 		<li><a href="https://twitter.com/arunsakthivel96" target="blank">Twitter</a></li>
+	</ul>
+</div>
+<div class="ht">
+<div class="con" ng-view>
+	
+</div>
+</div>
 </body>
 </html>

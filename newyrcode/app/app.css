@@ -1,0 +1,27 @@
+html {
+  background: url(http://bestanimations.com/Holidays/Fireworks/fireworks/ba-blue-red-fireworks-colorful-pretty-gif-pic.gif) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.new-year-clock {
+  top: 20px;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
+}
+
+#footer a {
+  text-decoration: none;
+}
