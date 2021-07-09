@@ -32,12 +32,14 @@
 <br />
 
 ### Connect with me:
+[<img align="left" alt="Arun Kumar Sakthivel  | stackoverflow" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/stackoverflow.svg" />][stackoverflow]
 
-[<img align="left" alt="Arun kumar Sakthivel   | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin]
-[<img align="left" alt="Arun kumar Sakthivel   | Instagram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />][instagram]
-[<img align="left" alt="Arun kumar Sakthivel   | stackoverflow" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/stackoverflow.svg" />][stackoverflow]
+[<img align="left" alt="Arun Kumar Sakthivel  | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin]
+[<img align="left" alt="Arun Kumar Sakthivel  | Instagram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />][instagram]
+
 
 <br />
+
+[stackoverflow]: https://stackoverflow.com/users/10262709/arunsakthivel96
 [instagram]: https://www.instagram.com/arunsakthivel96_/
 [linkedin]: https://www.linkedin.com/in/arunsakthivel96/
-[stackoverflow]: https://stackoverflow.com/users/10262709/arunsakthivel96/
